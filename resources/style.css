@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /*Universal Styles*/
 
 html {
@@ -16,6 +17,12 @@ h1 {
     font-weight: 900;
     line-height: 1;
     color: rgb(65, 65, 65);
+}
+
+h4 {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 18px
 }
 
 .full-box {
@@ -50,14 +57,10 @@ header {
     line-height: 1;
 }
 
-h2 {
-    line-height: 1.1;
-    padding: 0.5rem 0.5rem;
-}
-
 h3 {
     font-size: 1.5rem;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 p {
@@ -139,49 +142,164 @@ nav {
     color: #ffffff;
   }
 
-.practice {
-    width: 100%;
-    display: flex;
-    background-color: white;
-    overflow: hidden;
-}
-
-.reading {
+.multi-container {
     width: 60%;
-    height: auto;
-    margin: 24px 32px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.reading img {
+.information {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+}
+
+.main-img-box {
     width: 100%;
+    margin: 32px 24px;
 }
 
-.stack-right {
+.main-img-box img {
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+
+.content-stack {
+    width: 40%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    vertical-align: top;
+    margin-top: 1rem;
 }
 
-.stack-left {
-    display: flex;
-    flex-direction: column;
+.content-box {
+    display: inline-flex;
+    border: 1px solid  rgba(211, 211, 211, 0.801);
 }
 
-.box {
-    display: flex;
+#information p {
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 1.4;
 }
 
-.box img {
+.main-img-box h4 {
+    padding: 1.5rem 0 1.5rem 0;
+    line-height: 1.5;
+}
+
+.main-img-box h3 {
+    margin: 0 0 2rem 0;
+}
+
+.information .text-box a {
+    text-decoration: none;
+    color: rgb(53, 53, 241);
+}
+
+.content-box img {
     width: 35%;
-    height: auto;
-    margin: 16px;
-}
-
-.box-text {
-    display: flex:
-    flex-direction: column;
-    margin: 16px;
+    padding: 1rem 1rem;
+    display: inline-block;
 }
 
 #lecture {
     background-color: rgba(211, 211, 211, 0.801);
+}
+
+
+/*Course Section*/
+
+.courses {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.course-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+}
+
+.course-box {
+    width: 30%;
+    height: auto;
+    margin: 0 0.5rem 1rem 0.5rem;
+    background-color: rgb(243, 243, 243); 
+}
+
+.course-box img {
+    width: 100%;
+}
+
+.course-text {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-text h4{
+    padding-top: 0.5rem;
+}
+
+.thesis {
+    background-color: rgb(243, 243, 243);
+}
+
+.thesis h1 {
+    padding-top: 1.5rem;
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    justify-content: center;
+}
+
+.thesis-box {
+    display: flex;
+}
+
+.content-box video {
+    width: 35%;
+    padding: 1rem 1rem;
+}
+
+.main-img-box video {
+    width: 100%;
+}
+
+#urban {
+    justify-content: start;
+    padding: 1.5rem 0 0 .5rem 0;
+}
+
+.thesis h4 {
+    padding: .5rem 0 2rem 0;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    border-top: 1px solid  rgba(211, 211, 211, 0.801);
+    background-color: rgb(243, 243, 243);
+}
+
+.foot-left {
+    padding: 1rem 1.5rem;
+}
+
+.foot-right {
+    display: flex;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+}
+
+.foot-right a {
+    text-decoration: none;
+    padding: .5rem .5rem;
+    color: rgb(65, 65, 65);
 }

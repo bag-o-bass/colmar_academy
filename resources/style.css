@@ -9,7 +9,7 @@
 html {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    background-color: darkgray;
+    background-color: rgba(211, 211, 211, 0.801);
 }
 
 h1 {
@@ -33,7 +33,7 @@ h4 {
 
 /* Navbar */
 
-header {
+.desktop {
     display: flex;
     background-color: whitesmoke;
     height: 4rem;
@@ -62,10 +62,6 @@ h3 {
     font-weight: 500;
     line-height: 1.5;
 }
-
-p {
-}
-
 
 span {
     font-weight: 350;
@@ -98,6 +94,10 @@ nav {
     background-color: darkgray;
 }
 
+.mobile {
+    display: none;
+}
+
 /* large containers */
 
 .full-box {
@@ -118,6 +118,10 @@ nav {
     display: inline-flex;
     flex-flow: column;
     justify-content: center;
+}
+
+#mobile-pic {
+    display: none;
 }
 
 .full-box h3 {
@@ -221,16 +225,18 @@ nav {
     width: 90%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     margin-bottom: 2rem;
     padding-top: 1.5rem;
 }
 
 .course-box {
     width: 30%;
+    min-width: 25%;
     height: auto;
     margin: 0 0.5rem 1rem 0.5rem;
-    background-color: rgb(243, 243, 243); 
+    background-color: rgb(243, 243, 243);
+    overflow: hidden; 
 }
 
 .course-box img {
@@ -302,4 +308,94 @@ nav {
     text-decoration: none;
     padding: .5rem .5rem;
     color: rgb(65, 65, 65);
+}
+
+@media only screen and (max-width:600px) {
+    .desktop, .information .multi-container, .thesis .content-stack, 
+    #urban, .thesis h4, .course-box img, .course-box h4, #pc-pic, .foot-right {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .full-box   {
+        width: auto;
+        padding: 0.5rem 0rem;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .full-box img {
+        width: 90%;
+        padding: 0rem 1rem;
+        align-items: center;
+        margin: auto;
+    }
+
+    .full-box .text-box {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .content-stack  {
+        width: 100%;
+        border-bottom: 1px solid  rgba(211, 211, 211, 0.801);
+    }
+
+    .content-stack .content-box .text-box {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .content-box {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        border: none;
+    }
+
+    #mobile-pic {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.5rem 1rem 0rem 1rem;
+    }
+
+    #lecture   {
+        background-color: rgb(243, 243, 243);
+    }
+
+    .course-box   {
+        flex-flow: column;
+    }
+
+    .courses {
+        background-color: rgb(243, 243, 243);
+    }
+
+    .course-container {
+        display: block;
+        width: 100%;
+        background-color: rgb(243, 243, 243);
+        border-bottom: 1px solid  rgba(211, 211, 211, 0.801);
+    }
+
+    .course-box {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgba(211, 211, 211, 0.801);
+    }
+    .thesis .multi-container  {
+        width: 100%;
+    }
 }

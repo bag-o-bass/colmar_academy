@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="resources/images/ic-logo.svg" alt="logo">
-        <h1 class="uppercase">Colmar<span>Academy</span></h1>
+        <nav class="desktop">
+            <img class="logo" src="resources/images/ic-logo.svg" alt="logo">
+            <h1 class="uppercase">Colmar<span>Academy</span></h1>
             <ul class="nav-links">
                 <li><a href="#">On Campus</a></li>
                 <li><a href="#">Online</a></li>
@@ -17,10 +18,16 @@
                 <li><a href="#">Sign In</a></li>
             </ul>
         </nav>
+        <nav class="mobile">
+            <img src="./resources/images/ic-logo.svg" alt="">
+            <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Campus programs"></a>
+            <a href="#"><img src="./resources/images/ic-online.svg" alt="Online programs"></a>
+            <a href="#"><img src="./resources/images/ic-login.svg" alt="Log in"></a>
+        </nav>
     </header>
     <main>
 
-        <!-- Start Cube-->
+<!-- Start Cube-->
 
         <section class="full-box">
             <img  src="resources/images/banner.jpg" alt="Three studying students">
@@ -44,7 +51,8 @@
             </div>
             <div class="content-stack">
                 <div class="content-box">
-                    <img src="resources/images/information-orientation.jpg" alt="People walking on a stone path">
+                    <img id="pc-pic" src="resources/images/information-orientation.jpg" alt="People walking on a stone path">
+                    <img id="mobile-pic" src="resources/images/information-orientation-mobile.jpg" alt="People walking on a stone path">
                         <div class="text-box" id="information">
                             <h2>Orientation Date</h2>
                             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -52,7 +60,8 @@
                         </div>
                 </div>
                 <div class="content-box">
-                    <img src="resources/images/information-campus.jpg" alt="A cafe, for some reason">
+                    <img id="pc-pic" src="resources/images/information-campus.jpg" alt="A cafe, for some reason">
+                    <img id="mobile-pic" src="resources/images/information-campus-mobile.jpg" alt="A cafe, for some reason">
                         <div class="text-box"id="information">
                             <h2>Our campus</h2>
                             <p>Find which campus is close by you</p>
@@ -60,7 +69,8 @@
                         </div>
                 </div>
                 <div class="content-box" id="lecture">
-                    <img src="resources/images/information-guest-lecture.jpg" alt="Some weirdo in a beret">
+                    <img id="pc-pic" src="resources/images/information-guest-lecture.jpg" alt="Some weirdo in a beret">
+                    <img id="mobile-pic" src="resources/images/information-guest-lecture-mobile.jpg" alt="Some weirdo in a beret">
                         <div class="text-box"id="information">
                             <h2>Our guest lecture</h2>
                             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
